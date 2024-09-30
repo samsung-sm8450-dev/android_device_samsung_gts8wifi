@@ -128,6 +128,19 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libsnapdragoncolor-manager.so',
     ): blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2_1.so'),
+    ('vendor/lib64/libPanDetector.so',
+     'vendor/lib64/libhypermotion_core.so',
+     'vendor/lib64/libvdis_core.so',
+     'vendor/lib64/libsensorlistener.so',
+     'vendor/lib64/unihal_android.so',
+     'vendor/lib/libPanDetector.so',
+     'vendor/lib/libhypermotion_core.so',
+     'vendor/lib/libvdis_core.so',
+     'vendor/lib/libsensorlistener.so',
+     'vendor/lib/unihal_android.so',
+     'vendor/lib/libvicom.so',
+     ): blob_fixup()
+        .add_needed('libshim_sensorndkbridge.so'),
 }
 
 module = ExtractUtilsModule(
