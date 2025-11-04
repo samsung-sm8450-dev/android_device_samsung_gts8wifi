@@ -95,9 +95,7 @@ BOARD_USES_QCOM_MERGE_DTBS_SCRIPT := true
 # TARGET_NEEDS_DTBOIMAGE := true
 BOARD_RAMDISK_USE_LZ4 := true
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
-TARGET_KERNEL_CONFIG := gki_defconfig \
-    vendor/waipio-gki_defconfig \
-    vendor/waipio_GKI.config
+TARGET_KERNEL_CONFIG := gts8wifi_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/sm8450
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
     PROJECT_NAME=gts8wifi
