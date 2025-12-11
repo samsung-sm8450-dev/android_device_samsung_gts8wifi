@@ -123,6 +123,11 @@ blob_fixups: blob_fixups_user_type = {
 
     ('vendor/bin/hw/android.hardware.gnss-aidl-service-qti', 'vendor/lib/hw/android.hardware.gnss-aidl-impl-qti.so', 'vendor/lib64/hw/android.hardware.gnss-aidl-impl-qti.so'): blob_fixup()
         .replace_needed('android.hardware.gnss-V1-ndk_platform.so', 'android.hardware.gnss-V1-ndk.so'),
+    (
+        'vendor/lib64/libdpps.so',
+        'vendor/lib64/libsnapdragoncolor-manager.so',
+    ): blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2_1.so'),
 }
 
 module = ExtractUtilsModule(
