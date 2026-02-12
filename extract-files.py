@@ -107,6 +107,37 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/bin/hw/macloader': blob_fixup()
         .binary_regex_replace(b'vendor.wifi.dualconcurrent.interface', b'vendor.wiff.dualconcurrent.interface')
         .binary_regex_replace(b'ro.vendor.wifi.sap.interface', b'ru.vendor.wifi.sap.interface'),
+
+    'vendor/lib64/libkeystore-engine-wifi-hidl.so': blob_fixup()
+	.replace_needed('android.system.keystore2-V1-ndk_platform.so', 'android.system.keystore2-V1-ndk.so'),
+
+    ('vendor/lib64/vendor.samsung.hardware.light-V1-ndk_platform.so',
+     'vendor/bin/hw/vendor.samsung.hardware.light-service'
+    ): blob_fixup()
+        .replace_needed('android.hardware.light-V1-ndk_platform.so', 'android.hardware.light-V1-ndk.so'),
+
+    ('vendor/lib/vendor.qti.hardware.display.config-V5-ndk_platform.so',
+     'vendor/lib64/vendor.qti.hardware.display.config-V5-ndk_platform.so',
+     'vendor/lib/vendor.qti.hardware.display.config-V4-ndk_platform.so',
+     'vendor/lib64/vendor.qti.hardware.display.config-V4-ndk_platform.so',
+     'vendor/lib/vendor.qti.hardware.display.config-V1-ndk_platform.so',
+     'vendor/lib64/vendor.qti.hardware.display.config-V1-ndk_platform.so',
+     'vendor/lib64/vendor.samsung.hardware.media.converter-V1-ndk_platform.so',
+     'vendor/lib64/vendor.samsung.hardware.media.mpp-V5-ndk_platform.so',
+     'vendor/lib/vendor.qti.hardware.display.config-V2-ndk_platform.so',
+     'vendor/lib64/vendor.qti.hardware.display.config-V2-ndk_platform.so',
+     'vendor/lib64/vendor.samsung.hardware.media.converter-V2-ndk_platform.so',
+     'vendor/lib64/vendor.samsung.hardware.security.hdcp.wifidisplay-V2-ndk_platform.so',
+     'vendor/lib/vendor.qti.hardware.display.config-V3-ndk_platform.so',
+     'vendor/lib64/vendor.qti.hardware.display.config-V3-ndk_platform.so',
+     'vendor/lib/vendor.qti.hardware.display.config-V6-ndk_platform.so',
+     'vendor/lib64/vendor.qti.hardware.display.config-V6-ndk_platform.so',
+     'vendor/bin/vendor.samsung.hardware.security.hdcp.wifidisplay-service'
+    ): blob_fixup()
+        .replace_needed('android.hardware.common-V2-ndk_platform.so', 'android.hardware.common-V2-ndk.so'),
+
+    ('vendor/bin/hw/android.hardware.gnss-aidl-service-qti', 'vendor/lib/hw/android.hardware.gnss-aidl-impl-qti.so', 'vendor/lib64/hw/android.hardware.gnss-aidl-impl-qti.so'): blob_fixup()
+        .replace_needed('android.hardware.gnss-V1-ndk_platform.so', 'android.hardware.gnss-V1-ndk.so'),
 }
 
 module = ExtractUtilsModule(
