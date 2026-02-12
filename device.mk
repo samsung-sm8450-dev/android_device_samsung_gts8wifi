@@ -35,7 +35,6 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     audio.r_submix.default \
     audio.usbv2.default \
-    sound_trigger.primary.taro:64 \
     libaudiochargerlistener \
     libbatterylistener \
     libbluetooth_audio_session \
