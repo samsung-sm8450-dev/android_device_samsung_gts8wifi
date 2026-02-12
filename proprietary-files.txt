@@ -1306,7 +1306,6 @@ vendor/bin/hw/mfgloader
 vendor/bin/hw/mppserver
 vendor/bin/hw/samsung.software.media.c2@1.0-service
 vendor/bin/hw/secaudiohalaidl
-vendor/bin/hw/vendor.qti.hardware.memtrack-service
 vendor/bin/hw/vendor.samsung.hardware.authfw@1.0-service
 vendor/bin/hw/vendor.samsung.hardware.biometrics.fingerprint@3.0-service
 vendor/bin/hw/vendor.samsung.hardware.camera.provider@4.0-service_64
@@ -1420,7 +1419,6 @@ vendor/etc/init/init.vendor.wlan.rc
 vendor/etc/init/init_thermal-engine-v2.rc
 vendor/etc/init/lights-default-sec.rc
 vendor/etc/init/loc-launcher.rc
-vendor/etc/init/memtrack_qti.rc
 vendor/etc/init/modemManager.rc
 vendor/etc/init/mppserver.rc
 vendor/etc/init/mstatdaemon.rc
@@ -1571,7 +1569,6 @@ vendor/etc/vintf/manifest/engmode_manifest.xml
 vendor/etc/vintf/manifest/iweaver_v1_manifest.xml
 vendor/etc/vintf/manifest/lights-default-sec.xml
 vendor/etc/vintf/manifest/manifest_non_qmaa.xml
-vendor/etc/vintf/manifest/memtrack_qti.xml
 vendor/etc/vintf/manifest/mppserver.xml
 vendor/etc/vintf/manifest/radio_manifest_wifionly.xml
 vendor/etc/vintf/manifest/sec_c2_manifest_default0_1_0.xml
