@@ -114,7 +114,9 @@ key 95    NUMPAD_COMMA
 key 96    NUMPAD_ENTER
 key 97    CTRL_RIGHT
 key 98    NUMPAD_DIVIDE
-key 99    SYSRQ
+# The Full Screen / DeX key (scancode 0xed)
+# Maps to WINDOW to enable native Android desktop windowing
+key 99    WINDOW
 key 100   ALT_RIGHT
 # key 101 "KEY_LINEFEED"
 key 102   MOVE_HOME
