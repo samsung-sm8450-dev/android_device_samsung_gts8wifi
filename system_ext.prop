@@ -1,2 +1,5 @@
+# Charger
+ro.charger.enable_suspend=1
+
 persist.vendor.dpm.feature=11
 ro.audio.ihaladaptervendorextension_enabled=true
