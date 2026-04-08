@@ -48,6 +48,8 @@ TARGET_USES_QCOM_MM_AUDIO := true
 
 SOONG_CONFIG_NAMESPACES += qtiaudio
 SOONG_CONFIG_qtiaudio += uses_agm
+SOONG_CONFIG_qtiaudio_feature_dynamic_log += false
+SOONG_CONFIG_qtiaudio_feature_agm_hidl := false
 SOONG_CONFIG_qtiaudio_uses_agm := false
 SOONG_CONFIG_qtiaudio_feature_pal_hidl := false
 SOONG_CONFIG_qtiaudio_uses_gsl := false
@@ -106,7 +108,7 @@ BOARD_USES_QCOM_MERGE_DTBS_SCRIPT := true
 # TARGET_NEEDS_DTBOIMAGE := true
 BOARD_RAMDISK_USE_LZ4 := true
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
-TARGET_KERNEL_CONFIG := gki_defconfig \
+TARGET_KERNEL_CONFIG := \
     vendor/waipio-gki_defconfig \
     vendor/waipio_GKI.config
 TARGET_KERNEL_SOURCE := kernel/samsung/sm8450
