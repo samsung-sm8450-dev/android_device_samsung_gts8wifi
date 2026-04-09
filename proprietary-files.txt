@@ -109,14 +109,14 @@ vendor/lib64/soundfx/libshoebox.so
 vendor/lib64/soundfx/libswdap.so
 vendor/lib64/soundfx/libswspatializer.so
 vendor/lib64/lib_SoundAlive_3DPosition_ver202.so
-vendor/lib/libar-pal.so;DISABLE_CHECKELF
-vendor/lib64/libar-pal.so;DISABLE_CHECKELF
+vendor/lib/libar-pal.so;DISABLE_CHECKELF;DISABLE_DEPS
+vendor/lib64/libar-pal.so;DISABLE_CHECKELF;DISABLE_DEPS
 
 # Audio AGM
-vendor/bin/hw/vendor.qti.hardware.AGMIPC@1.0-service;MODULE_SUFFIX=_vendor;MAKE_COPY_RULE
-vendor/etc/init/vendor.qti.hardware.AGMIPC@1.0-service.rc;MODULE_SUFFIX=_vendor;MAKE_COPY_RULE
-vendor/lib64/vendor.qti.hardware.AGMIPC@1.0.so;MODULE_SUFFIX=_vendor;MAKE_COPY_RULE
-vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so;MODULE_SUFFIX=_vendor;MAKE_COPY_RULE
+vendor/bin/hw/vendor.qti.hardware.AGMIPC@1.0-service;MAKE_COPY_RULE_ONLY
+vendor/etc/init/vendor.qti.hardware.AGMIPC@1.0-service.rc;MAKE_COPY_RULE_ONLY
+vendor/lib64/vendor.qti.hardware.AGMIPC@1.0.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so;MAKE_COPY_RULE_ONLY
 
 # Audio configs
 vendor/etc/a2dpsink_audio_policy_configuration.xml
@@ -1141,7 +1141,7 @@ vendor/lib64/vendor.qti.esepowermanager@1.0.so
 vendor/lib64/vendor.qti.esepowermanager@1.1.so
 
 # Security
-vendor/bin/hw/android.hardware.security.keymint-service
+vendor/bin/hw/android.hardware.security.keymint-service;DISABLE_DEPS
 vendor/etc/init/android.hardware.security.keymint-service.rc
 vendor/lib64/libskeymint10device.so
 vendor/lib64/vendor.samsung.hardware.keymint-V1-ndk_platform.so
@@ -1920,7 +1920,7 @@ vendor/lib/libqc2audio_base.so
 vendor/lib/libqc2audio_basecodec.so
 vendor/lib/libqc2audio_core.so
 vendor/lib/libqc2audio_hooks.so
-vendor/lib/libqc2audio_hwaudiocodec.so
+vendor/lib/libqc2audio_hwaudiocodec.so;DISABLE_DEPS
 vendor/lib/libqc2audio_platform.so
 vendor/lib/libqc2audio_swaudiocodec.so
 vendor/lib/libqc2audio_utils.so
@@ -2187,23 +2187,23 @@ vendor/lib64/lib_SoundBooster_ver1050.so
 vendor/lib64/libadm.so
 vendor/lib64/libadreno_app_profiles.so
 vendor/lib64/libadreno_utils.so
-vendor/bin/agmcap;MODULE_SUFFIX=_vendor;MAKE_COPY_RULE
-vendor/bin/agmcompressplay;MODULE_SUFFIX=_vendor;MAKE_COPY_RULE
-vendor/bin/agmplay;MODULE_SUFFIX=_vendor;MAKE_COPY_RULE
-vendor/lib64/libagm.so;MODULE_SUFFIX=_vendor;MAKE_COPY_RULE
-vendor/lib64/libagmmixer.so;MODULE_SUFFIX=_vendor;MAKE_COPY_RULE
-vendor/lib64/libagmclient.so;MODULE_SUFFIX=_vendor;MAKE_COPY_RULE
-vendor/lib64/libagm_mixer_plugin.so;DISABLE_DEPS;MODULE_SUFFIX=_vendor;MAKE_COPY_RULE
-vendor/lib64/libagm_compress_plugin.so;DISABLE_DEPS;MODULE_SUFFIX=_vendor;MAKE_COPY_RULE
-vendor/lib64/libagm_pcm_plugin.so;DISABLE_DEPS;MODULE_SUFFIX=_vendor;MAKE_COPY_RULE
+vendor/bin/agmcap;MAKE_COPY_RULE_ONLY
+vendor/bin/agmcompressplay;MAKE_COPY_RULE_ONLY
+vendor/bin/agmplay;MAKE_COPY_RULE_ONLY
+vendor/lib64/libagm.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/libagmmixer.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/libagmclient.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/libagm_mixer_plugin.so;DISABLE_DEPS;MAKE_COPY_RULE_ONLY
+vendor/lib64/libagm_compress_plugin.so;DISABLE_DEPS;MAKE_COPY_RULE_ONLY
+vendor/lib64/libagm_pcm_plugin.so;DISABLE_DEPS;MAKE_COPY_RULE_ONLY
 # vendor/lib64/libsndcardparser.so
 vendor/lib64/libai_denoiser_interface.so
 vendor/lib64/libaidenoiser.so
 vendor/lib64/libaivideocentral.arcsoft.so
-vendor/lib64/libar-acdb.so;MODULE_SUFFIX=_vendor;MAKE_COPY_RULE
-vendor/lib64/libar-gpr.so;MODULE_SUFFIX=_vendor;MAKE_COPY_RULE
-vendor/lib64/libar-gsl.so;MODULE_SUFFIX=_vendor;MAKE_COPY_RULE
-vendor/lib64/libats.so;MODULE_SUFFIX=_vendor;MAKE_COPY_RULE
+vendor/lib64/libar-acdb.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/libar-gpr.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/libar-gsl.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/libats.so;MAKE_COPY_RULE_ONLY
 vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libauto_framing_arcsoft.uniplugin@1.0.so
 vendor/lib64/libautotracking_interface.so
@@ -2351,8 +2351,8 @@ vendor/lib64/liblocationservice_glue.so
 vendor/lib64/liblocdiagiface.so
 vendor/lib64/liblowi_client.so
 vendor/lib64/liblowi_wifihal.so
-vendor/lib64/liblx-ar_util.so;MODULE_SUFFIX=_vendor;MAKE_COPY_RULE
-vendor/lib64/liblx-osal.so;MODULE_SUFFIX=_vendor;MAKE_COPY_RULE
+vendor/lib64/liblx-ar_util.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/liblx-osal.so;MAKE_COPY_RULE_ONLY
 vendor/lib64/libmaskdetection.uniplugin@1.0.so
 vendor/lib64/libmctfengine_stub.so
 vendor/lib64/libmdmdetect.so
@@ -2393,7 +2393,7 @@ vendor/lib64/libops.so
 vendor/lib64/libos.so
 vendor/lib64/libpadm.so
 vendor/lib64/libpal_net_if.so
-vendor/lib64/libpalclient.so;MODULE_SUFFIX=_vendor;MAKE_COPY_RULE
+vendor/lib64/libpalclient.so;MAKE_COPY_RULE_ONLY
 vendor/lib64/libpantilt_detector.uniplugin@1.0.so
 vendor/lib64/libpdmapper.so
 vendor/lib64/libpdnotifier.so
@@ -2411,7 +2411,7 @@ vendor/lib64/libqc2audio_base.so
 vendor/lib64/libqc2audio_basecodec.so
 vendor/lib64/libqc2audio_core.so
 vendor/lib64/libqc2audio_hooks.so
-vendor/lib64/libqc2audio_hwaudiocodec.so
+vendor/lib64/libqc2audio_hwaudiocodec.so;DISABLE_DEPS
 vendor/lib64/libqc2audio_platform.so
 vendor/lib64/libqc2audio_swaudiocodec.so
 vendor/lib64/libqc2audio_utils.so
