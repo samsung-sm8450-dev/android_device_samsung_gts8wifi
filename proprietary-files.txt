@@ -2310,7 +2310,6 @@ vendor/lib64/libhermes_cred.so
 vendor/lib64/libhwvault.so
 vendor/lib64/libhypermotion_core.so
 vendor/lib64/libhypermotion_interface.so
-vendor/lib64/libhypervintf.so
 vendor/lib64/libidl.so
 vendor/lib64/libimage_enhancement.arcsoft.so
 vendor/lib64/libimagecodec_native.quram.so
