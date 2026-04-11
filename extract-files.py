@@ -71,6 +71,9 @@ blob_fixups: blob_fixups_user_type = {
      'vendor/bin/vendor.samsung.hardware.security.fkeymaster-service'): blob_fixup()
         .replace_needed('libcrypto.so', 'libcrypto-v33.so'),
 
+     'vendor/bin/hw/vendor.samsung.hardware.hyper-service': blob_fixup()
+        .replace_needed('libhyper.so', 'libhyper_vendor.so'),
+
      'vendor/lib64/libSecC2ComponentStore.so': blob_fixup()
         .add_needed('libshim_c2.so'),
 
