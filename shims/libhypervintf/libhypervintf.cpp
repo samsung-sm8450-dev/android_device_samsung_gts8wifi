@@ -30,3 +30,9 @@ void hyper_getSupportedFrequency(int, int) {
 
 void hyper_release(HyPerToken) {
 }
+
+void hyper_readSysfs(int) {
+}
+
+void hyper_writeSysfs(int, std::string) {
+}
