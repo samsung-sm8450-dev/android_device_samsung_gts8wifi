@@ -25,7 +25,7 @@ PRODUCT_SHIPPING_API_LEVEL := 31
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio@7.0-impl \
+    android.hardware.audio@7.1-impl.samsung-sm8450 \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.audio.service \
     android.hardware.bluetooth.audio-impl \
