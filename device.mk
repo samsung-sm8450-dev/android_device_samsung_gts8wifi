@@ -28,16 +28,13 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@7.1-impl.samsung-sm8450 \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.audio.service \
-    android.hardware.bluetooth.audio-impl \
     android.hardware.bluetooth.audio@2.0-impl \
-    android.hardware.bluetooth.audio@2.1-impl \
     android.hardware.soundtrigger@2.3-impl \
     audio.bluetooth.default \
     audio.r_submix.default \
     audio.usbv2.default \
     libaudiochargerlistener \
     libbatterylistener \
-    libbluetooth_audio_session \
     libfmpal \
     libqcompostprocbundle \
     libqcomvisualizer \
@@ -65,8 +62,7 @@ PRODUCT_COPY_FILES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     lib_bt_aptx \
-    lib_bt_ble \
-    lib_bt_bundle
+    lib_bt_ble
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml \

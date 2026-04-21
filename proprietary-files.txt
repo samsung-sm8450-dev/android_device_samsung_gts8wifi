@@ -139,6 +139,8 @@ vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
 # Bluetooth (A2DP)
 vendor/lib/hw/audio.bluetooth.default.so
 vendor/lib64/hw/audio.bluetooth.default.so
+vendor/lib/lib_bt_bundle.so;MAKE_COPY_RULE_ONLY
+vendor/lib64/lib_bt_bundle.so;MAKE_COPY_RULE_ONLY
 
 # Camera
 vendor/lib/camera/com.qti.eeprom.gt24p128c2csli_imx766.so
@@ -1787,6 +1789,7 @@ vendor/lib/libbauthtzcommon.so
 vendor/lib/libbitmlengine.so
 vendor/lib/libbitmlenginev2.so
 vendor/lib/libbluetooth_a2dpsink_session.so
+vendor/lib/libbluetooth_audio_session.so;MAKE_COPY_RULE_ONLY
 vendor/lib/libbluetooth_audio_session_qti.so
 vendor/lib/libbluetooth_audio_session_qti_2_1.so
 vendor/lib/libbodyid.arcsoft.so
@@ -2215,6 +2218,7 @@ vendor/lib64/libbauthtzcommon.so
 vendor/lib64/libbitmlengine.so
 vendor/lib64/libbitmlenginev2.so
 vendor/lib64/libbluetooth_a2dpsink_session.so
+vendor/lib64/libbluetooth_audio_session.so;MAKE_COPY_RULE_ONLY
 vendor/lib64/libbluetooth_audio_session_qti.so
 vendor/lib64/libbluetooth_audio_session_qti_2_1.so
 vendor/lib64/libbodyid.arcsoft.so
